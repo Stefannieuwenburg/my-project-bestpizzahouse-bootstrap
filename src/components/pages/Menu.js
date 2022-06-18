@@ -1,8 +1,9 @@
-
+import React from "react";
 
 const Menu = () => {
     return (
         <>
+            <h1 className="main-section">menu page</h1>
             <h1>Our Menu</h1>
             <h3>Pizzas</h3> Pizzas All pizzas have our tasty tomato sauce base.
             BBQ sauce, chilli or oregano can be added on request Meat Lovers
@@ -53,6 +54,6 @@ const Menu = () => {
             1.25 litre bottles of Coke range
         </>
     );
-}
+};
 
 export default Menu;

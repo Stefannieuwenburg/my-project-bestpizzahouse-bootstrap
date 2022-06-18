@@ -1,32 +1,73 @@
 import React from "react";
-import  "../styles/Navbar.module.css";
+import "../styles/Navbar.module.css";
+import { Link } from "react-scroll";
 
-import {
-  Container,
-  Nav,
-  Navbar,
-} from "react-bootstrap";
+
 const HomeNavbar = () => {
   return (
       <>
-          <Navbar className="nav position-sticky top-0" expand="lg">
-              <Container>
-                  <Navbar.Brand href="#home">Pizza House</Navbar.Brand>
-                  <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                  <Navbar.Collapse id="basic-navbar-nav">
-                      <Nav className="me-auto">
-                          <Nav.Link href="#home">Discount</Nav.Link>
-                          <Nav.Link href="#home">Menu</Nav.Link>
-                          <Nav.Link href="#link">About</Nav.Link>
-                          <Nav.Link href="#link">Products</Nav.Link>
-                          <Nav.Link href="#link">Location</Nav.Link>
-                          <Nav.Link href="#link">Contact</Nav.Link>
-                      </Nav>
-                  </Navbar.Collapse>
-              </Container>
-          </Navbar>
+          <nav className="navbar navbar-expand-lg navbar-light " id="navbar">
+              <div className="container-fluid">
+                  <h3 className="navbar-brand">
+                      PIZZA HOUSE
+                  </h3>
+                  <button
+                      className="navbar-toggler"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#navbarNav"
+                      aria-controls="navbarNav"
+                      aria-expanded="false"
+                      aria-label="Toggle navigation"
+                  >
+                      <span className="navbar-toggler-icon"></span>
+                  </button>
+                  <div className="collapse navbar-collapse" id="navbarNav">
+                      <ul className="navbar-nav">
+                          <li>
+                              {" "}
+                              <Link
+                                  activeClass="active"
+                                  to="main"
+                                  spy={true}
+                                  smooth={true}
+                                  offset={-70}
+                                  duration={500}
+                              >
+                                  MAIN
+                              </Link>
+                          </li>
+                          <li>
+                              <Link
+                                  activeClass="active"
+                                  to="gallery"
+                                  spy={true}
+                                  smooth={true}
+                                  offset={-70}
+                                  duration={500}
+                              >
+                                  GALLERY
+                              </Link>
+                          </li>
+                          <li>
+                              <Link
+                                  activeClass="active"
+                                  to="contact"
+                                  spy={true}
+                                  smooth={true}
+                                  offset={-70}
+                                  duration={500}
+                              >
+                                  CONTACT
+                              </Link>
+                          </li>
+                      </ul>
+                  </div>
+              </div>
+          </nav>
           ;
       </>
   );
 }
 export default HomeNavbar;
+

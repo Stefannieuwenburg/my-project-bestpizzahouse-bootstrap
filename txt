@@ -1,0 +1,18 @@
+
+
+
+
+//  id, path, title, price, info
+//   <Image
+//                         src={path}
+//                         alt={title}
+//                         width="200px"
+//                         height="200px"
+//                     />
+//                  <span className="text-black-50">{info}</span>
+//                     <p className="m-0 fw-semibold">{price}</p>  
+                    
+"https://pizza-clone.vercel.app/api/products"      
+
+
+"https://api.adviceslip.com/advice"

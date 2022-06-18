@@ -7,7 +7,7 @@ import pizza3 from "../data/images/gallery6.png";
 const Header = () => {
 
   return (
-      <div className="header pt-5 pb-5">
+      <div className="header pt-5 pb-5" id="main">
           <Container>
               <Carousel>
                   <Carousel.Item>
