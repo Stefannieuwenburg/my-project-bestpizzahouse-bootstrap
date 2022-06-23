@@ -1,5 +1,5 @@
 # project pizza house
-react.js + bootstrap
+react.js + Material-ui
 
 # Getting Started with Create React App
 

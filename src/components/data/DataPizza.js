@@ -1,5 +1,5 @@
 
-    export const products = [
+export const DataPizza = [
       {
         id: 1,
         path: "/images/gallery2.png",

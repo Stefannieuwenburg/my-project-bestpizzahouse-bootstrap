@@ -1,16 +1,20 @@
-import HomeNavbar from "./components/Navbar";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import Gallery from "./components/pages/Gallery"
+import HomeAppBar from "./components/HomeAppBar";
+import Hero from "./components/pages/Hero";
+import Contact from "./components/pages/Contact";
+import SaleBanner from "./components/pages/SaleBanner";
+import CardBanner from "./components/pages/CardBanner"
+import Footer from "./components/pages/Footer"
 
 
 const Layout = () => {
     return (
         <div>
-            <HomeNavbar />
-            <Header />
-            <Gallery />
-            <Footer />
+            <HomeAppBar />
+            <Hero />
+            <CardBanner/>
+            < SaleBanner/>
+            <Contact />
+            <Footer/>
         </div>
     );
 };

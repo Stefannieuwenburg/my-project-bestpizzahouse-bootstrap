@@ -1,8 +1,9 @@
 import React from "react";
+import { Box, Stack, Typography } from "@mui/material";
 
 const Menu = () => {
     return (
-        <>
+        <Box sx={{ backgroundColor: "#d1411e" }}>
             <h1 className="main-section">menu page</h1>
             <h1>Our Menu</h1>
             <h3>Pizzas</h3> Pizzas All pizzas have our tasty tomato sauce base.
@@ -52,7 +53,7 @@ const Menu = () => {
             butter, lemon pepper or olive oil Garlic Bread Soup Cream of Pumpkin
             Soup (homemade) Minestrone (homemade) Chicken Soup (homemade) Drinks
             1.25 litre bottles of Coke range
-        </>
+        </Box>
     );
 };
 
