@@ -1,7 +1,6 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardHeader from "@mui/material/CardHeader";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -10,6 +9,15 @@ import StarIcon from "@mui/icons-material/StarBorder";
 import Typography from "@mui/material/Typography";
 import GlobalStyles from "@mui/material/GlobalStyles";
 import Container from "@mui/material/Container";
+
+
+  const styles = {
+     
+      border: "2px solid",
+      borderRadius: "130px",
+     
+  };
+
 
 
 
@@ -46,7 +54,7 @@ const tiers = [
 
 const PricingContent = () => {
     return (
-        <Box mt={2} mb={2} sx={{ backgroundColor: "#d1411e" }}>
+        <Box   sx={{ backgroundColor: "#d1411e" }}>
             <GlobalStyles
                 styles={{ ul: { margin: 0, padding: 0, listStyle: "none" } }}
             />
@@ -63,7 +71,7 @@ const PricingContent = () => {
                             sm={tier.title === "Best Deal" ? 12 : 6}
                             md={4}
                         >
-                            <Card>
+                            <Card sx={styles}>
                                 <CardHeader
                                     title={tier.title}
                                     subheader={tier.subheader}
@@ -77,10 +85,7 @@ const PricingContent = () => {
                                         align: "center",
                                     }}
                                     sx={{
-                                        backgroundColor: (theme) =>
-                                            theme.palette.mode === "light"
-                                                ? theme.palette.grey[200]
-                                                : theme.palette.grey[700],
+                                        backgroundColor: "yellow",
                                     }}
                                 />
                                 <CardContent>
@@ -117,7 +122,6 @@ const PricingContent = () => {
                                         ))}
                                     </ul>
                                 </CardContent>
-                                <CardActions></CardActions>
                             </Card>
                         </Grid>
                     ))}

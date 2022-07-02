@@ -24,9 +24,6 @@ const SaleBanner = () => {
 
     return (
         <Box
-            mt={4}
-            mb={4}
-            p={2}
             display={{ md: "flex" }}
             sx={{ backgroundColor: "#d1411e", color: "#fff" }}
         >
@@ -39,7 +36,7 @@ const SaleBanner = () => {
                     height="200px"
                 />
             </Box>
-            <Box mt={{ base: 2, md: 0 }} ml={{ md: 6 }}>
+            <Box  ml={{ md: 6 }}>
                 <Typography
                     fontWeight="bold"
                     textTransform="uppercase"
@@ -47,13 +44,13 @@ const SaleBanner = () => {
                     letterSpacing="wide"
                     color="teal.600"
                 >
-                    Marketing
+                    Pizza House
                 </Typography>
 
-                <Typography mt={2} color="gray.500">
-                    Getting a new business off the ground is a lot of hard work.
-                    Here are five ideas you can use to find your first
-                    customers.
+                <Typography  color="gray.500">
+                    we love to gif you the best service in the house.<br/>
+                    gif us your ideas we can make it for you on the spot.<br/>
+                    all customers welkom.
                 </Typography>
             </Box>
         </Box>

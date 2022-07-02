@@ -103,7 +103,7 @@ function HomeAppBar(props) {
                         {drawer}
                     </Drawer>
                 </Box>
-                <Box component="main" sx={{ p: 3 }}>
+                <Box component="main" >
                     <Toolbar />
                 </Box>
             </Box>

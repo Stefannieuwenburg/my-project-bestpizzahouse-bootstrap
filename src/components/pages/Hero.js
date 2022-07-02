@@ -1,23 +1,13 @@
 import React from "react";
 import Slider from "react-slick";
-import { makeStyles } from "@material-ui/core/styles";
 import { Box, Typography} from "@mui/material";
 
 import pizza1 from "../../components/data/images/gallery2.png";
 
-const useStyles = makeStyles({
-    txt: {
-        display: "flex",
-        flexDirection: "row",
-        alignItems: "center",
-        justifyContent: "center",
-        fontSize: "30px",
-        
-    },
-});
+
 
 const Hero = () => {
-      const style = useStyles();
+      
   
       const settings = {
           dots:false,
@@ -32,41 +22,94 @@ const Hero = () => {
     return (
         <Box sx={{ backgroundColor: "#d1411e" }}>
             <Slider {...settings}>
-                <Box
-                    className="col-md-3 d-flex justify-content-center align-items-center "
-                    
-                >
+                <Box className="col-md-4 d-flex justify-content-center align-items-center ">
                     <img
                         src={pizza1}
                         alt="pizza"
-                        width="200px"
-                        height="200px"
+                        width="300px"
+                        height="300px"
                     />
-                    <Typography className={style.txt}>
-                        speed delivery service{" "}
+                    <Typography
+                        direction="row"
+                        justifyContent="center"
+                        alignItems="center"
+                        component="h2"
+                        variant="h3"
+                        style={{ color: "white" }}
+                    >
+                        {" "}
+                        20% Order{" "}
+                    </Typography>{" "}
+                    <Typography
+                        direction="row"
+                        justifyContent="center"
+                        alignItems="center"
+                        component="h2"
+                        variant="h3"
+                        style={{ color: "white" }}
+                    >
+                        Off Now{" "}
                     </Typography>
                 </Box>
-                <Box className="col-md-3 d-flex justify-content-center align-items-center ">
+                <Box className="col-md-4 d-flex justify-content-center align-items-center ">
                     <img
                         src={pizza1}
                         alt="pizza"
-                        width="200px"
-                        height="200px"
+                        width="300px"
+                        height="300px"
                     />
-                    <Typography className={style.txt}>
-                        speed delivery service{" "}
+                    <Typography
+                        direction="row"
+                        justifyContent="center"
+                        alignItems="center"
+                        component="h2"
+                        variant="h3"
+                        style={{ color: "white" }}
+                    >
+                        {" "}
+                        20% Order{" "}
+                    </Typography>{" "}
+                    <Typography
+                        direction="row"
+                        justifyContent="center"
+                        alignItems="center"
+                        component="h2"
+                        variant="h3"
+                        style={{ color: "white" }}
+                    >
+                        {" "}
+                        Off Now
                     </Typography>
                 </Box>
-                <Box className="col-md-3 d-flex justify-content-center align-items-center ">
+                <Box className="col-md-4 d-flex justify-content-center align-items-center ">
                     <img
                         src={pizza1}
                         alt="pizza"
-                        width="200px"
-                        height="200px"
+                        width="300px"
+                        height="300px"
                     />
-                    <Typography className={style.txt}>
-                        speed delivery service{" "}
-                    </Typography>
+                    <Typography
+                        direction="row"
+                        justifyContent="center"
+                        alignItems="center"
+                        component="h2"
+                        variant="h3"
+                        style={{ color: "white" }}
+                    >
+                        {" "}
+                        20% Order{" "}
+                    </Typography>{" "}
+                    <Typography
+                        direction="row"
+                        justifyContent="center"
+                        alignItems="center"
+                        component="h2"
+                        variant="h3"
+                        style={{ color: "white" }}
+                    >
+                        {" "}
+                        Off Now{" "}
+                    </Typography>{" "}
                 </Box>
             </Slider>
         </Box>
